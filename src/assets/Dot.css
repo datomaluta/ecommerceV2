@@ -1,0 +1,11 @@
+.dot {
+  height: 20px;
+}
+
+.dot path {
+  fill: rgb(199, 199, 199);
+}
+
+.active path {
+  fill: rgb(102, 102, 102);
+}

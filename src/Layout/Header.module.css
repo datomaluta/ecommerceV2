@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(187, 87, 87); */
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2577fd;
+  cursor: pointer;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2c3333;
+  transition: all 0.3s;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.nav a:hover {
+  color: #2577fd;
+  border-bottom: 1px solid #2577fd;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+}
+
+.inputWrapper {
+  position: relative;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputWrapper input {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #d0d0d0;
+  border-radius: 20px;
+  transition: all 0.3s;
+  outline: 1px solid #fff;
+}
+
+.inputWrapper input:focus {
+  outline: 1px solid #2577fd;
+}
+
+.inputWrapper img {
+  position: absolute;
+  height: 20px;
+  right: 10px;
+}
+
+.imgWrapper {
+  /* background-color: aqua; */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.imgWrapper img {
+  display: block;
+  width: 50%;
+}
+
+.imgWrapper:hover {
+  transform: scale(1.2);
+}
+
+.badge {
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  background-color: #00b1ff;
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 50%;
+  top: -10px;
+  right: -15px;
+  z-index: 100;
+}
+
+.actions button {
+  font-family: "Poppins", sans-serif;
+  background-color: #2577fd;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #2577fd;
+  transition: all 0.3s;
+}
+
+.actions button:hover {
+  background-color: #fff;
+  color: #00b1ff;
+  border: 1px solid #2577fd;
+}
