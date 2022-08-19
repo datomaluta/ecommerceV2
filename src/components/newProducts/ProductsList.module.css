@@ -1,0 +1,14 @@
+.productsWrapper {
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.innerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productsHeader {
+  font-size: 50px;
+  margin-bottom: 20px;
+}

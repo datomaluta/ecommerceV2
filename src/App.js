@@ -1,9 +1,12 @@
 import Header from "./Layout/Header";
+import { Redirect, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Slider from "./components/slider/Slider";
 import slider2 from "./assets/slider2.jpg";
 import NewSlider from "./components/NewSlider";
+import ProductsList from "./components/newProducts/ProductsList";
+import ProductDetail from "./components/productDetail/ProductDetail";
 // import slider1 from "./assets/sliderImages/sliderimg1.jpg";
 
 function App() {
@@ -41,10 +44,20 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Slider slides={sliderImages} /> */}
-      <main>{/* <NewProduct /> */}</main>
-      {/* <img src="/sliderImages/sliderimg4.jpg" /> */}
-      <NewSlider slides={sliderData} />
+      <div className="container">
+        <Switch>
+          {/* <Route path="/home">
+            <Redirect to="/" />
+          </Route> */}
+          <Route path="/" exact>
+            <NewSlider slides={sliderData} />
+            <ProductsList />
+          </Route>
+          <Route path="/product-detail/:productId">
+            <ProductDetail />
+          </Route>
+        </Switch>
+      </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import classes from "./Header.module.css";
 import cartIcon from "../assets/cart.svg";
 import heartIcon from "../assets/heart-outline.svg";
 import searchIcon from "../assets/search-outline.svg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,16 +11,41 @@ const Header = () => {
       <nav className={classes.nav}>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <NavLink
+              activeClassName={classes.active}
+              className={classes.link}
+              to="/"
+              exact
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/">Shop</a>
+            <NavLink
+              activeClassName={classes.active}
+              className={classes.link}
+              to="/shop"
+            >
+              Shop
+            </NavLink>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <NavLink
+              activeClassName={classes.active}
+              className={classes.link}
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </li>
           <li>
-            <a href="/">About us</a>
+            <NavLink
+              className={classes.link}
+              activeClassName={classes.active}
+              to="/about"
+            >
+              about us
+            </NavLink>
           </li>
         </ul>
       </nav>
